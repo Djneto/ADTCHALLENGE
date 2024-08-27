@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub__bloco__1" style="text-align: center;">
+            <pre style="color: #00FF00; font-family: monospace;">
+▄███████
+███   ███
+███    ███
+███████████▀
+███    ███
+███    █▀ 
+            </pre>
+        </div>
+        <div class="sub__bloco__2">
+            <div class="container__text__digitado">
+                <div class="container__icon">
+                    <p>! Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <textarea id="texto_digitado" class="input__texto" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="container__button">
+                <button class="button button__criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="button button__descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="sub__bloco__3">
+            <div id="div_sem_mensagem" class="container__resposta">
+                <pre style="color: #00FF00; font-family: monospace;">
+                    ______
+                 ,'"       "-._
+               ,'              "-._ _._
+               ;              __,-'/   |
+              ;|           ,-' _,'"'._,.
+              |:            _,'      |\ `.
+              : \       _,-'         | \  `.
+               \ \   ,-'             |  \   \
+                \ '.         .-.     |       \
+                 \  \         "      |        :
+                  `. `.              |        |
+                    `. "-._          |        ;
+                    / |`._ `-._      L       /
+                   /  | \ `._   "-.___    _,'
+                  /   |  \_.-"-.___   """"
+                  \   :            /"""
+                   `._\_       __.'_
+              __,--''_ ' "--'''' \_  `-._
+        __,--'     .' /_  |   __. `-._   `-._
+       <            `.  `-.-''  __,-'     _,-'
+        `.            `.   _,-'"      _,-'
+          `.            ''"lka    _,-'
+            `.                _,-'
+              `.          _,-'
+                `.   __,'"
+                  `'"
+           </pre>
+                <h1 style="color: #00FF00">Nenhuma mensagem encontrada</h1>
+                <p style="color: #00FF00">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="div_com_mensagem" class="container__resposta">
+                <textarea id="texto_resposta" class="input__texto" disabled="true"></textarea>
+                <button class="button button__copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
